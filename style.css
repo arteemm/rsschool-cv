@@ -1,0 +1,22 @@
+
+.container {
+    
+    display: flex;
+    justify-content: space-around;
+    }
+
+
+.my_avatar{
+    width:  100px;
+    height: 90px;
+}
+ol{
+    margin-right: auto;
+
+}
+body{
+    margin: 0 auto;
+
+    width: 600px;
+
+}
