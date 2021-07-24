@@ -1,0 +1,145 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+  color:#fff;
+  padding-top: 20px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.information {
+  background-color: #3C3C3C;
+}
+.contacts {
+  list-style-type: none;
+  padding: 0;
+}
+.contacts>li {
+  margin-bottom: 20px;
+}
+.wrapper {
+  padding-left: 40px;
+}
+.contacts__element {
+ display: flex;
+ text-decoration: none;
+ font-size: 1.6rem;
+ color: #fff;
+
+}
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.contacts__element:hover {
+  text-decoration: underline;
+}
+.icon_telegram {
+  background-image: url(./Image/icons8-телеграмма-app.svg);
+}
+.icon_gmail {
+  background-image: url(./Image/icons8-gmail.svg);
+}
+.icon_git {
+  background-image: url(./Image/icons8-github.svg);
+}
+.skills-list {
+  padding: 0;
+  padding-left: 20px;
+}
+.skills-list>li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+.page {
+  color: black;
+  padding-left: 40px;
+}
+.avatar {
+  width: 300px;
+}
+figure {
+  margin: 0;
+}
+.sample-code {
+  white-space: pre;
+}
+h1 {
+  font-size: 3.3rem;
+  width: 300px;
+  border-bottom: solid 3px #E5E5E5;
+  margin-bottom: 40px;
+}
+.about-me {
+  margin-bottom: 40px;
+}
+.footer {
+  border-top: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #38495a, #a2abb3, #38495a);
+  margin-top: 150px;
+}
+.footer-container {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.github {
+  display: block;
+  width: 120px;
+  height: 45px;
+  padding-left: 45px;
+  background-image: url("./Image/github.svg");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: 45px;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s;
+}
+
+.rss {
+  display: block;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  width: 86px;
+  height: 32px;
+  background-image: url("./Image/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 111px;
+}
+.rss-year {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 21px;
+  letter-spacing: -2px;
+  color: black;
+  line-height: 0.9;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.rss:hover .rss-year {
+  right: -5px;
+  letter-spacing: 0;
+}
