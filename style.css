@@ -30,27 +30,24 @@ body {
 }
 /* start header styles */
 
-.logo {
-  width: 40px;
-  height: 40px;
-}
 .link {
   text-decoration: none;
   color: #fff;
 }
 .header_wrapper {
+  padding: 20px 15px 30px 15px;
   display: flex;
-  justify-content: flex-start;
-  gap: 50px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  justify-content: space-between;
   background-color: #3C3C3C;
 }
 .nav__list {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
+}
+.menu{
+  /* display: none; */
 }
 /* finish header styles */
 
@@ -64,6 +61,7 @@ body {
 }
 .contacts__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .link_colored {
@@ -85,7 +83,7 @@ body {
   background-position: center;
 }
 .icon_git {
-  background-image: url(./Image/icons8-github.svg);
+  background-image: url(./Image/discord.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -250,7 +248,16 @@ code {
   }
 }
 @media (max-width: 796px) {
+  .header__nav {
+    display: none;
+  }
+  .about-me_wrapper {
+    flex-wrap: wrap;
+  }
   .wrapper {
-    max-width: 796px;
+    max-width: 320px;
+  }
+  .footer-container {
+    max-width: 320px;
   }
 }
