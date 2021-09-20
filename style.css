@@ -173,6 +173,15 @@ code {
 
 /* finish education styles */
 
+/* start projects styles */
+
+.projects iframe {
+  width: 56%!important;
+}
+
+
+/* finish projects styles */
+
 /* start footer styles */
 
 .footer {
