@@ -6,27 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./reset.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
-  <title>Curriculum vitae</title>
+  <title>My cv</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <main class="main">
     <header class="header">
       <div class="wrapper header_wrapper">
-        <a class="github" href="https://github.com/arteemm/rsschool-cv" target="_blank" rel="noopener noreferrer">github</a>
-        <!-- <div class="menu">
-          <button class="burger burger-line">
-            <span></span>
-          </button>
-        </div> -->
+        <a class="github github_header" href="https://github.com/arteemm/rsschool-cv" target="_blank" rel="noopener noreferrer">github</a>
+        <div class="menu">
+          <span ></span>
+        </div> 
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="link" href="#contacts">Contacts</a></li>
             <li class="nav__item"><a class="link" href="#about-me">About me</a></li>
             <li class="nav__item"><a class="link" href="#skills">Skills</a></li>
             <li class="nav__item"><a class="link" href="#sample-code">Sample code</a></li>
+            <li class="nav__item"><a class="link" href="#video">Video</a></li>
             <li class="nav__item"><a class="link" href="#projects">Projects</a></li>
             <li class="nav__item"><a class="link" href="#education">Education</a></li>
           </ul>
@@ -62,35 +64,52 @@
     <section class="skills" id="skills">
       <div class="wrapper wrapper_border">
         <h2 class="section-title">My skills</h2>
-        <dl class="skills-list">
-          <dt class="skill-html">HTML</dt>
-          <dd class="level" style="width: 80%;"><div style="width: 60%;">60%</div></dd>
-          <dt class="skill-css">CSS</dt>
-          <dd class="level"  style="width: 80%;"><div style="width: 60%;">60%</div></dd>
-          <dt class="skill-js">Java Script</dt>
-          <dd class="level"  style="width: 80%;"><div  style="width: 20%;">20%</div></dd>
-        </dl>
+        <ul class="skills-list">
+          <li>
+            <p class="skill-html">HTML</p>
+            <div class="level" style="width: 80%;"><div style="width: 60%;">60%</div></div>
+          </li>
+          <li>
+            <p class="skill-css">CSS</p>
+            <div class="level"  style="width: 80%;"><div style="width: 60%;">60%</div></div>
+          </li>
+          <li>
+            <p class="skill-js">Java Script</p>
+            <div class="level"  style="width: 80%;"><div  style="width: 20%;">20%</div></div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="sample-code" id="sample-code">
       <div class="wrapper wrapper_border">
         <h2 class="section-title"> Sample code</h2>
-        <code>
-          function pow(x, n) {
-            let result = 1;
-          
-            for (let i = 0; i &lt; n; i++) {
-              result *= x;
+        <pre>
+          <code class="js">
+            function pow(x, n) {
+              let result = 1;
+            
+              for (let i = 0; i &lt; n; i++) {
+                result *= x;
+              }
+               return result;
             }
-             return result;
-          }
-        </code>
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="video" id="video">
+      <div class="wrapper wrapper_border">
+        <h2 class="section-title">My video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9TXUvsRpLao" title="YouTube video player" style="border-width: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
     <section class="projects" id="projects">
-      <div class="wrapper">
-        <h2 class="section-title">My video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9TXUvsRpLao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="wrapper wrapper_border">
+        <h2 class="section-title">My projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item"><a href="https://arteemm.github.io/quiz/" target="_blank">Quiz</a></li>
+          <li class="projects__item"><a href="https://arteemm.github.io/residential-complex/" target="_blank">Residential-complex "Melody"</a></li>
+        </ul>
       </div>
     </section>
     <section class="education" id="education">
@@ -100,14 +119,15 @@
         <p>My English level is Pre-Intermediate (A2+).</p>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer-container">
-        <a class="github" href="https://github.com/arteemm/rsschool-cv" target="_blank" rel="noopener noreferrer">github</a>
-        <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
-          <span class="rss-year">'21</span>
-        </a>
-      </div>
-    </footer>
-  </main>  
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <a class="github" href="https://github.com/arteemm/rsschool-cv" target="_blank" rel="noopener noreferrer">github</a>
+      <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
+        <span class="rss-year">'21</span>
+      </a>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
