@@ -193,7 +193,7 @@ code {
   padding-top: 20px;
 }
 .video iframe {
-  width: 56%!important;
+  width: 56%;
 }
 
 /* finish projects styles */
@@ -296,6 +296,11 @@ code {
   }
 }
 @media (max-width: 796px) {
+  .video iframe {
+    width: calc(100vw - 10px)!important;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .nav__list {
     flex-direction: column;
   }
