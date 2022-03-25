@@ -147,6 +147,13 @@ a {
 .skill-js {
   background-image: url("./Image/java-script-icon.svg");
 }
+.skill-ts {
+  background-image: url("./Image/icons8-typescript.svg");
+}
+.skill-react {
+  background-image: url("./Image/icons8-react.svg");
+  background-size: contain;
+}
 .level {
   margin: 6px 0 16px;
   padding: 0;
